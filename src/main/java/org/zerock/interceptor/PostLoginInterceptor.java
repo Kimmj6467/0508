@@ -19,6 +19,7 @@ public class PostLoginInterceptor extends HandlerInterceptorAdapter {
 		Object loginResult = modelAndView.getModel().get("member");
 		
 		MemberVO vo = (MemberVO) loginResult;
+		
 
 		request.getSession().setAttribute("member", vo);
 		
