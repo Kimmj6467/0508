@@ -22,7 +22,6 @@ public class PostLoginInterceptor extends HandlerInterceptorAdapter {
 		
 
 		request.getSession().setAttribute("member", vo);
-		
 	}
 
 	
